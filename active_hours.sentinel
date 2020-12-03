@@ -1,6 +1,5 @@
 import "time"
 import "tfrun"
-import "timezone"
 
 param hour_min
 param hour_max
