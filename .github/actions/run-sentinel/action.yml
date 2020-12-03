@@ -1,0 +1,5 @@
+name: 'Sentinel test'
+description: 'Test Sentinel policies with Sentinel'
+runs:
+  using: docker
+  image: Dockerfile

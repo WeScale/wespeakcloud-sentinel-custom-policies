@@ -1,0 +1,11 @@
+name: Sentinel
+
+on: push
+jobs:
+  sentinel-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-code
+        uses: actions/checkout@v2
+      - name: sentinel-test
+        uses: WeScale/wespeakcloud-sentinel-custom-policies/.github/actions/run-sentinel@main
