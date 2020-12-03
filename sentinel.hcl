@@ -8,11 +8,11 @@ policy "active_hours" {
   enforcement_level = "hard-mandatory"
 }
 
-policy "restrict_instance_type" {
-  source = "./restrict_instance_type.sentinel"
+policy "instance_types" {
+  source = "./instance_types.sentinel"
   enforcement_level = "advisory"
 }
 
 module "tfplan-functions" {
-  source = "./modules/tfplan-functions.sentinel"
+  source = "./modules/tfplan-functions/tfplan-functions.sentinel"
 }
